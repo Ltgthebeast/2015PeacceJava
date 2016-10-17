@@ -1,12 +1,11 @@
 package org.usfirst.frc.team3461.robot.subsystems;
 
-import org.usfirst.frc.team3461.robot.Robot;
 import org.usfirst.frc.team3461.robot.RobotMap;
 import org.usfirst.frc.team3461.robot.commands.ManualAimCommand;
 
 import edu.wpi.first.wpilibj.AnalogPotentiometer;
+import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.DigitalInput;
-import edu.wpi.first.wpilibj.VictorSP;
 import edu.wpi.first.wpilibj.command.PIDSubsystem;
 
 /**
@@ -18,8 +17,8 @@ public class ShooterAngle extends PIDSubsystem {
 								Ki = 0.03,
 								Kd = 0.003;
 	public static double networkAngle = 0;
-	VictorSP AngleTalon1 = new VictorSP(RobotMap.ShooterAnglePort1),
-			 AngleTalon2 = new VictorSP(RobotMap.ShooterAnglePort2);
+	CANTalon AngleTalon1 = new CANTalon(RobotMap.ShooterAnglePort1),
+			 AngleTalon2 = new CANTalon(RobotMap.ShooterAnglePort2);
 	
 	AnalogPotentiometer Pot1 = new AnalogPotentiometer(RobotMap.Pot1Port);
 	
@@ -27,7 +26,7 @@ public class ShooterAngle extends PIDSubsystem {
 				 LS2 = new DigitalInput(RobotMap.LS2Port);
 
 	public void updateVariables(){
-		networkAngle = Robot.visionprocessing.table.getNumber("ANGLE", 0);
+		//networkAngle = Robot.visionprocessing.table.getNumber("ANGLE", 0);
 	}
 	
     // Initialize your subsystem here

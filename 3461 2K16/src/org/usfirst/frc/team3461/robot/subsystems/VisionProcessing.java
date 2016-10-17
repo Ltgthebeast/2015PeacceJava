@@ -33,7 +33,7 @@ public class VisionProcessing extends Subsystem {
 		found = false;
 		driveable = false;		
 		centered = false;
-		table = NetworkTable.getTable("SmartDashboard/camera");
+		//table = NetworkTable.getTable("SmartDashboard/camera");
 	}
 
 	/*
