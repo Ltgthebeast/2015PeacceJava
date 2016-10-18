@@ -15,8 +15,8 @@ public class BunnyEars extends Subsystem {
     
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-	VictorSP RightArmTalon = new VictorSP(RobotMap.RightArmPort);
-	VictorSP LeftArmTalon = new VictorSP(RobotMap.LeftArmPort);
+	VictorSP RightArmTalon = new VictorSP(RobotMap.RightBunnyEarPort);
+	VictorSP LeftArmTalon = new VictorSP(RobotMap.LeftBunnyEarPort);
 	
 	DigitalInput LS3 = new DigitalInput(RobotMap.LS3Port), //down right
 				 LS4 = new DigitalInput(RobotMap.LS4Port), //up right

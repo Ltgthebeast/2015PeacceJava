@@ -17,50 +17,50 @@ public class RobotMap {
     // public static int rangefinderModule = 1;
 	
 	public static final double 
-	//Pot Positions
-	AngleUp = .82,
-	AngleDown = .008,
-	AngleShoot = .65,
-	AngleFloat = .07,
-	PotBuffer = 0,
+		//Pot Positions
+		AngleUp = .82,
+		AngleDown = .008,
+		AngleShoot = .65,
+		AngleFloat = .07,
+		PotBuffer = 0,
 	
-	//Shooter Wheel Speeds
-	LowSpeed = .15,
-	HighSpeed = 1,
-	IntakeSpeed = -.16,
+		//Shooter Wheel Speeds
+		LowSpeed = .15,
+		HighSpeed = 1,
+		IntakeSpeed = -.16,
 	
-	//Shooter angle buffer
-	Buffer = 3;
+		//Shooter angle buffer
+		Buffer = 3;
 
-public static final int
-	//CAN ID's & PWM
-	//can - talon srx, pwm - victor sp
-	LDrivePort1 = 3, // and 4 can
-	RDrivePort1 = 1, //and 2 can
-	LDrivePort2 = 4,
-	RDrivePort2 = 2,
+	public static final int
+		//CAN ID's & PWM
+		//can - talon srx, pwm - victor sp
+		RDrivePort1 = 1, // can
+		RDrivePort2 = 2,
+		LDrivePort1 = 3, // can
+		LDrivePort2 = 4,
+		
+		ShooterAnglePort1 = 5, // can
+		ShooterAnglePort2 = 6,
 	
-	RightArmPort = 6, // pwm
-	LeftArmPort = 7, //pwm
+		ShooterWheelsPort1 = 5, // pwm
+		ShooterWheelsPort2 = 6,
 	
-	ShooterWheelsPort1 = 5, //and 6 can
-	ShooterWheelsPort2 = 6,
+		RightBunnyEarPort = 7, // pwm
+		LeftBunnyEarPort = 8, // pwm
 	
-	ShooterAnglePort1 = 4, //and 5 pwm
-	ShooterAnglePort2 = 5,
+		//D I/O
+		LS1Port = 1, //shootert up
+		LS2Port = 2, // shooter down
+		LS3Port = 4, // ears down right
+		LS4Port = 5, // ears up right
+		LS5Port = 12, // ears down left
+		LS6Port = 13, // ears up left
+		
+		//PCM
+		PuncherCHA = 0,
+		PuncherCHB = 1,
 	
-	//D I/O
-	LS1Port = 1, //shootert up
-	LS2Port = 2, // shooter down
-	LS3Port = 4, // ears down right
-	LS4Port = 5, // ears up right
-	LS5Port = 12, // ears down left
-	LS6Port = 13, // ears up left
-	
-	//PCM
-	PuncherCHA = 0,
-	PuncherCHB = 1,
-	
-	//Analog
-	Pot1Port = 1;
+		//Analog
+		Pot1Port = 1;
 }

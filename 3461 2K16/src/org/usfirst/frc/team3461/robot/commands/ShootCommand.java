@@ -25,8 +25,9 @@ public class ShootCommand extends CommandGroup {
         // e.g. if Command1 requires chassis, and Command2 requires arm,
         // a CommandGroup containing them would require both the chassis and the
         // arm.
-    	addSequential(new ExtendShooterCommand());
-    	Timer.delay(3);
+    	addSequential(new ExtendShooterCommand(), 3);
+    	//Timer.delay(3);
     	addSequential(new RetractShooterCommand());
+    	start();
     }
 }
